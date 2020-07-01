@@ -1,0 +1,709 @@
+@import url('https://fonts.googleapis.com/css?family=Dax:400,900');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+body {
+    background: #ffffff;
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+
+}
+
+a, p {
+    font-family: Roboto;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+
+
+    font-family: helvetica, sans-serif;
+}
+
+.content {
+    position: relative;
+    padding-top: 80px;
+}
+
+.content p {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #FCEEE8;
+    color: #bbb;
+    line-height: 1.5;
+    flex: 1;
+}
+
+footer a {
+    text-decoration: none;
+    color: #eee;
+}
+
+.ft-title {
+    color: #fff;
+    font-family: ’Merriweather’, serif;
+    font-size: 1.375rem;
+    padding-bottom: 0.625rem;
+}
+
+
+.ft-main {
+    padding: 1.25rem 1.875rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ft-main-item {
+    padding: 1.25rem;
+    min-width: 12.5rem /*200px*/;
+}
+
+@media only screen and (min-width: 29.8125rem /*477px*/
+) {
+    .ft-main {
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (min-width: 77.5rem /*1240px*/
+) {
+    .ft-main {
+        justify-content: space-evenly;
+    }
+}
+
+.container-1 {
+    padding-top: 114px;
+    width: 960px;
+
+}
+
+.container-1 p {
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+
+    color: #2C47B8;
+}
+
+.container-1 h1 {
+
+    padding-top: 148px;
+    font-family: Recoleta;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 49px;
+    /* identical to box height */
+
+    text-align: center;
+    color: #2C47B8;
+}
+
+.container-2 p {
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+
+
+    color: #2C47B8;
+}
+
+.container-2 h1 {
+
+    font-family: Recoleta;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 49px;
+    /* identical to box height */
+
+    color: #2C47B8;
+}
+
+.con p {
+    padding-top: 144.7px;
+    width: 338px;
+    height: 68px;
+    left: 543px;
+    top: 3000px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+
+    color: #333333;
+}
+
+.btn {
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 168px;
+    height: 61px;
+
+    background: #FB6762;
+    border-radius: 26px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+
+}
+
+.btn1 {
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 151px;
+    height: 52px;
+    background: #FE5759;
+    border-radius: 26px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+
+}
+
+.btn3 {
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 142px;
+    height: 37px;
+    background: #ffffff;
+
+    border: 2px solid #333333;
+    box-sizing: border-box;
+    border-radius: 26px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+
+}
+
+.header-basic-light {
+    padding: 20px 40px;
+    box-sizing: border-box;
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.15);
+    height: 80px;
+    background-color: #fff;
+}
+
+.header-basic-light .header-limiter {
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Logo */
+
+.header-basic-light .header-limiter h1 {
+    float: left;
+    font: normal 28px Cookie, Arial, Helvetica, sans-serif;
+    line-height: 40px;
+    margin: 0;
+}
+
+.header-basic-light .header-limiter h1 span {
+    color: #5383d3;
+}
+
+/* The header links */
+
+.header-basic-light .header-limiter a {
+    font-family: Recoleta;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 41px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #2C47B8;
+    text-decoration: none;
+}
+
+.header-basic-light .header-limiter nav {
+    font: 15px Arial, Helvetica, sans-serif;
+    line-height: 40px;
+    float: right;
+}
+
+.header-basic-light .header-limiter nav a {
+    display: inline-block;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    text-decoration: none;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+
+    color: #333333;
+}
+
+.header-basic-light .header-limiter nav a.selected {
+    background-color: #86a3d5;
+    color: #ffffff;
+    border-radius: 3px;
+    padding: 6px 10px;
+}
+
+.myc {
+    font-family: Recoleta;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 57px;
+
+    color: #2C47B8;
+
+}
+
+.myc1 {
+    width: 480px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #333333;
+}
+
+.con2 {
+    padding-top: 120px;
+}
+
+.head {
+    font-family: Recoleta;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 49px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #2C47B8;
+}
+
+.rectangle {
+    width: 161px;
+    height: 10px;
+    background: #2C47B8;
+    border-radius: 10px;
+}
+
+.r {
+    padding-top: 150px;
+}
+
+.myc1_2 {
+    width: 400px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #333333;
+}
+
+.col_1 {
+
+    padding-left: 100px;
+
+}
+
+.c {
+    padding-top: 120px;
+}
+
+
+/* Making the header responsive. */
+
+@media all and (max-width: 600px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .header-basic-light {
+        padding: 20px 0;
+        height: 120px;
+    }
+
+    .header-basic-light .header-limiter h1 {
+        float: none;
+        margin: -8px 0 10px;
+        text-align: center;
+        font-size: 24px;
+        line-height: 1;
+    }
+
+    .header-basic-light .header-limiter nav {
+
+        line-height: 2;
+        float: none;
+    }
+
+    .header-basic-light .header-limiter nav a {
+        padding-left: 4px;
+        padding-right: 4px;
+        font-size: 18px;
+    }
+
+    .myc {
+
+        float: none;
+        font-size: 30px;
+        line-height: 35px;
+        margin: 0;
+    }
+
+    .myc1 {
+        width: 240px;
+        float: none;
+        font-size: 18px;
+        line-height: 19px;
+
+    }
+
+    .c {
+        padding-top: 40px;
+    }
+
+    .btn1 {
+        float: none;
+        width: 130px;
+        height: 45px;
+        font-size: 20px;
+        line-height: 22px;
+
+    }
+
+    .head {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .rectangle {
+        width: 161px;
+        height: 7px;
+    }
+
+    .row {
+
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .con2 {
+        float: none;
+        padding: 0;
+    }
+
+    .r {
+        padding-top: 80px;
+    }
+
+    .myimg {
+        width: 50px;
+        height: 48px;
+    }
+
+    .myc1_2 {
+        width: 170px;
+        font-size: 18px;
+        line-height: 19px;
+    }
+}
+
+.limiter {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-login100 {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+
+    background-color: #2C47B8;
+}
+
+
+.wrap-login100 {
+    width: 722px;
+    height: 570px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+
+
+    background: #fff;
+    border-radius: 20px;
+    position: relative;
+}
+
+.login1 {
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 29px;
+    width: 212px;
+    height: 28px;
+
+    color: #000000;
+}
+
+.login100-form {
+    width: 100%;
+}
+
+.login100-form-title {
+    font-family: Recoleta;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 41px;
+    /* identical to box height */
+    width: 282px;
+    height: 41px;
+
+    color: #2C47B8;
+    text-align: left;
+
+    width: 100%;
+    display: block;
+}
+
+
+/*------------------------------------------------------------------
+[ Input ]*/
+
+.wrap-input100 {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 20px;
+}
+
+
+/*---------------------------------------------*/
+.input100 {
+    font-family: Raleway-Medium;
+    color: #555555;
+    line-height: 1.2;
+    font-size: 18px;
+
+
+    width: 100%;
+    background: transparent;
+    height: 55px;
+    border-radius: 20px;
+    padding: 0 25px 0 25px;
+}
+
+.form-control {
+    width: 547px;
+    height: 58px;
+
+
+    /* White */
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+
+@media (max-width: 576px) {
+    .wrap-login100 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+}
+
+/*----------------------*/
+/*Radio buttons on Signup page*/
+.radio-container {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    /* Made by */
+}
+
+.radio-container h1 {
+    font-family: 'Dax', sans-serif;
+    color: #fff;
+}
+
+.radio-container input[type="radio"] {
+    display: none;
+}
+
+.radio-container input[type="radio"]:checked + .box {
+    background-color: #2C47B8;
+}
+
+.radio-container input[type="radio"]:checked + .box span {
+    color: white;
+    transform: translateY(50px);
+}
+
+.radio-container input[type="radio"]:checked + .box span:before {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.radio-container .box {
+    width: 150px;
+    height: 140px;
+    background-color: #FE5759;
+    transition: all 250ms ease;
+    will-change: transition;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    font-family: 'Dax', sans-serif;
+    font-weight: 900;
+}
+
+.radio-container .box:active {
+    transform: translateY(10px);
+}
+
+.radio-container .box span {
+    position: absolute;
+    transform: translate(0, 20px);
+    left: 0;
+    right: 0;
+    transition: all 300ms ease;
+    font-size: 1.5em;
+    user-select: none;
+    color: white;
+}
+
+.radio-container .box span:before {
+    font-size: 1.2em;
+    font-family: FontAwesome;
+    display: block;
+    transform: translateY(-80px);
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+    font-weight: normal;
+    color: white;
+}
+
+.radio-container .front-end span:before {
+    content: '\f063';
+}
+
+.radio-container .back-end span:before {
+    content: '\f062';
+}
+
+.radio-container p {
+    color: #fff;
+    font-family: 'Dax', sans-serif;
+    font-weight: 400;
+}
+
+.radio-container p a {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #fff;
+}
+
+.radio-container p span:after {
+    content: '\f0e7';
+    font-family: FontAwesome;
+    color: yellow;
+}
+
+.form-error {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    color: red;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+    @media (max-width: 991px) {
+        .form-error{
+            font-size: 16px;
+        }
+    }
+
+
+.form-error ul{
+    text-align: center;
+    list-style: inside;
+}

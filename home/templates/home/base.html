@@ -1,0 +1,82 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'home/main.css' %}">
+
+
+
+
+    {% if title %}
+        <title>Signing Off!{{ title }} </title>
+    {% else %}
+        <title> Signing Off! </title>
+    {% endif %}
+</head>
+<body>
+
+<header class="header-basic-light">
+
+    <div class="header-limiter">
+
+        <h1><a href="{% url 'home:home' %}"> Signing off</a></h1>
+
+        <nav>
+            <a href="{% url 'home:about' %}">About the initiative</a>
+            <a href="#">FAQ</a>
+            <a class="btn3" href="{% url 'home:signup' %}">Sign Up</a>
+
+        </nav>
+    </div>
+</header>
+
+{% block content %}
+{% endblock %}
+
+<footer>
+    <!-- Footer main -->
+    <section class="ft-main">
+        <div class="container-1 ">
+            <p>Signing off is an initiative to pass on feasible objects to the newbies who need them, along with
+                messages from the seniors who once walked the same road they are about to tread on. We collect bicycles
+                and mattresses from the graduating seniors and pass them on to the incoming batch of juniors with the
+                help of the Welfare Board, IIT Guwahati.
+
+            </p>
+            <p>Simple idea, right? But look how it impacts a freshman's life. We nudge them onto this beautiful journey,
+                with new aspirations, new dreams but some old and cherished memories.</p>
+
+            <h1>Excited to organise this in your college?</h1>
+
+
+            <div class="con" align="center">
+                <br>
+                <a class="btn" href="">Join Us</a>
+
+                <p> Connect with us on social media accounts</p>
+                <p style="font-size: 14px;
+line-height: 16px;">Made with <3 by team Signing off © Copyright 2019</p>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!-- Footer social -->
+
+
+    <!-- Footer legal -->
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,73 @@
+{% extends "home/base.html" %}
+{% load static %}
+{% block content %}
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100 ">
+
+                <div class="form-error">
+                    <ul>
+                        {% for error in form.errors %}
+                            <li>
+                                {{ error }}
+                            </li>
+                        {% endfor %}
+                    {% if errors %}
+                        <li>
+                        {{errors}}
+                    </li>
+                    {% endif %}
+                    </ul>
+                </div>
+
+                <form method="POST" class="login100-form" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="center radio-container">
+                        <label for="receive">
+                            <input type="radio" id="receive" name="enquiry" value=0 required checked/>
+                            <div class="front-end box">
+                                <span>Receive</span>
+                            </div>
+                        </label>
+
+                        <label for="donate">
+                            <input type="radio" id="donate" name="enquiry" value=1/>
+                            <div class="back-end box">
+                                <span>Donate </span>
+                            </div>
+                        </label>
+
+                    </div>
+                    <br>
+
+                    <br>
+                    <span class="login1">Choose Your Institute</span>
+                    <br>
+                    <div class="wrap-input100 " data-validate="Institute name is is required">
+                        <select id="{{ form.college_name.id_for_label }}" name="{{ form.college_name.html_name }}"
+                                class="input100" required>
+                            {% for option in options %}
+                                <option value="{{ option }}">{{ option }}</option>
+                            {% endfor %}
+                        </select>
+
+                    </div>
+                    <br>
+                    <span class="login1">Your institute mail address</span>
+
+                    <div class="wrap-input100 " data-validate="Email is required">
+                        <input class="input100" id="{{ form.email.if_for_label }}" type="email"
+                               name="{{ form.email.html_name }}" required
+                               value="{{ form.email.value | default_if_none:'' }}"/>
+                    </div>
+                    <br>
+                    <br>
+                    <div style="margin: auto; text-align: center">
+                        <button class="btn1" type="submit" style="display: inline-block"> Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

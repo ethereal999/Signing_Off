@@ -1,0 +1,87 @@
+{% extends "home/base.html" %}
+{% load static %}
+{% block content %}
+
+
+
+    <div class="content">
+        <div class="container">
+
+
+            <div class="row">
+                <div class="col-xs-6 ">
+                    <br><br>
+                    <h1 class="myc">Signing off?
+                        <span style="display: block;">Leave behind some memories</span></h1>
+
+                    <h4 class="myc1"> An inititative to pass on feasible objects from graduating batches to juniors</h4>
+                    <div class="con">
+                        <br>
+                        <a class="btn1" href={% url 'home:signup' %}>Sign Up</a>
+
+
+                    </div>
+                </div>
+                <div class="col-xs-6"><img class="img-responsive" src="{% static 'images/Group_1.png' %}"></div>
+
+
+            </div>
+            <div class="con2" align="center">
+                <h1 class="head">How it works</h1>
+                <div class="rectangle"></div>
+
+            </div>
+
+            <div class="row r">
+
+                <div class="col-xs-6 c"><img class="myimg" src="{% static 'images/Frame8.png' %}" width="79"
+                                             height="76">
+                    <h1 class="myc">Sign up</h1>
+
+
+                    <h4 class="myc1_2"> Start by filling the form and telling us what you wish to donate</h4>
+                </div>
+
+
+                <div class="col-xs-6"><img class="img-responsive" src="{% static 'images/image2.png' %}"></div>
+
+
+            </div>
+            <div class="row r ">
+
+
+                <div class="col-xs-6"><img class="img-responsive" src="{% static 'images/image1.png' %}"></div>
+                <div class="col-xs-6  c"><img class="myimg" src="{% static 'images/Frame7.png' %}" width="79"
+                                              height="76">
+                    <h1 class="myc">Customise</h1>
+
+
+                    <h4 class="myc1_2"> Collect customised stickers and pins to write your messages</h4>
+                </div>
+
+
+            </div>
+            <div class="row r">
+
+                <div class="col-xs-6 c "><img class="myimg" src="{% static 'images/Frame6.png' %}" width="79"
+                                              height="76">
+                    <h1 class="myc">Donate</h1>
+
+
+                    <h4 class="myc1_2"> Drop your things with our volunteers before leaving and you're done </h4>
+                </div>
+
+
+                <div class="col-xs-6"><img class="img-responsive" src="{% static 'images/image3.png' %}"></div>
+
+
+            </div>
+
+
+            <br><br><br>
+
+
+        </div>
+    </div>
+
+{% endblock %}
