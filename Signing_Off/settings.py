@@ -71,8 +71,8 @@ TEMPLATES = [
 WSGI_APPLICATION = 'Signing_Off.wsgi.application'
 
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'put your host user email here'
-EMAIL_HOST_PASSWORD = 'Put your app password here'
+EMAIL_HOST_USER = 'be.like.jain@gmail.com'
+EMAIL_HOST_PASSWORD = 'lrucstniozizaxkm'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
@@ -123,4 +123,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
+# Comment this out for deployment ->
+# STATIC_ROOT = '/home/MohitJain/Signing_Off/static'
 STATIC_URL = '/static/'

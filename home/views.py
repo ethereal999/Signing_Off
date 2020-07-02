@@ -1,4 +1,7 @@
+from django.contrib import messages
 from django.shortcuts import render, redirect
+
+from Signing_Off.settings import EMAIL_HOST_USER
 from .models import College
 from .forms import UserForm
 from django.core.mail import send_mail, BadHeaderError
@@ -6,6 +9,7 @@ from django.core.mail import send_mail, BadHeaderError
 
 def home(request):
     context = {}
+    messages.success(request,"Hii")
     return render(request, 'home/home.html', context)
 
 
@@ -34,9 +38,10 @@ def signup(request):
                 else:
                     form_link = str(college.form_donate)
                 message = "Here's a form : " + form_link
-                to_email = list(str(college.college_email).split(' '))
+                to_email = [str(email)]
+                print(to_email)
                 try:
-                    send_mail(subject, message, email, to_email)
+                    send_mail(subject, message,str(EMAIL_HOST_USER), to_email, fail_silently=False)
                 except BadHeaderError:
                     template = 'home/signup.html'
                     context = {
@@ -45,7 +50,8 @@ def signup(request):
                         'options': options
                     }
                     return render(request, template, context)
-                return redirect('home')
+                messages.success(request,'A link is sent to your email!')
+                return redirect('home:home')
             else:
                 template = 'home/signup.html'
                 context = {
